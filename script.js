@@ -16,9 +16,13 @@ for (let i = 0; i< squares*squares ; i++) {
         divs[i].style.backgroundColor = colors[Math.floor(Math.random() * 10)];
     });
     container.appendChild(divs[i]);
-
-
 }
 
+const clear = document.querySelector('#clear');
+clear.addEventListener('click' , () => {
+    for (let y = 0;y < squares*squares ;  y++) {
+    divs[y].style.backgroundColor = "white";
+    }
+});
 
 
